@@ -34,7 +34,7 @@ def main(cfg: DictConfig) -> None:
     pcfg = Config(**OmegaConf.to_object(cfg))
     console = Console()
     console.print(pcfg)
-    pcfg.mlflow.experiment_name = "train_test"
+    pcfg.mlflow.experiment_name = "test"
 
     # Load data
     console.print("[bold green]Loading training and testing data...[/bold green]")
